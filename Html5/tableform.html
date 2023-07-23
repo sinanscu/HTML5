@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="neresi" action="nerelisin.php" method="get" autocomplete="on">
+            <table border="0">
+                <h1>Siz Kimsiniz?</h1>
+                <tr><td>İyi misin?</td><td>
+                    <input type="text" name="iyimisin" placeholder="evet/hayır" required ></td></tr>
+                <tr><td>Uğurlu sayınız?</td><td><input type="number" name="ugur" value="7"></td></tr>
+
+                <tr><td>öneri ve şikayet</td><td><textarea cols="13" rows="5" placeholder="kabak tatlısı güzeldi."></textarea></td></tr>
+                <tr><td colspan="3"><input type="submit" value="Bana tıklama">
+                <input type="reset" value="Hepisini Sil"></td></tr>
+            </table>
+        </form>
+        <form name="onay" action="www.php" method="get">
+            <h1> seç</h1>
+            <input type="checkbox" name="ırkci">Evli misin?
+            <br>
+            <input type="checkbox" name="hirli" required>KVKK Onay
+            <br>
+            <h1>hangi spor</h1>
+            <input type="radio" name="spor" value="futbol"> futbol
+            <input type="radio" name="spor" value="voloeybol">voleybol
+            <input type="submit" name="onaybutonu">
+            <input type="reset" name="sıfırla">
+            <br><br>
+            <select name="memleket" id="memleket">
+                <option>Adana</option>
+                <option>Ankara</option>
+                <option>Antalya</option>
+                <option selected>İzmir</option>
+            </select><br>
+            <input type="image" src="resim/send.png" height="25">
+        </form>
+    </body>
+</html>
